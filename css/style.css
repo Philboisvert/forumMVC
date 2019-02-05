@@ -1,0 +1,255 @@
+body {
+    font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+    color: #404040;
+    background: #008B8B;
+    margin: auto;
+    /* width: 966px;*/
+    /*  max-width: 700px;*/
+}
+
+main {
+
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+
+#conteneur {
+    width: 966px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    margin: 30px;
+    text-decoration: none;
+    color: white;
+    height: 29px;
+    font-size: 12px;
+    font-weight: bold;
+    box-sizing: content-box;
+    border-radius: 16px;
+    padding: 8px 18px;
+    background-color: #404040;
+}
+
+#conteneur > a {}
+
+a:hover {
+    background-color: #CBE898;
+    color: #404040;
+}
+
+
+
+/******ENTÊTE ET NAVIGATION***********************/
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    background-color: #404040;
+    height: 80px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 40px;
+
+}
+
+nav li a {
+    display: inline;
+
+}
+
+nav ul > li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+nav ul > li a:hover {
+    color: #CBE898;
+
+}
+
+
+.login {
+    position: relative;
+    margin: 30px auto;
+    padding: 20px 20px 20px;
+    width: 310px;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.login:before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+.login h1 {
+    margin: -20px -20px 21px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    text-shadow: 0 1px white;
+    background: #f3f3f3;
+    border-bottom: 1px solid #cfcfcf;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 1px whitesmoke;
+}
+
+.login p {
+    margin: 20px 0 0;
+}
+
+.login p:first-child {
+    margin-top: 0;
+}
+
+.login input[type=text],
+.login input[type=password] {
+    width: 278px;
+}
+
+.login p.remember_me {
+    float: left;
+    line-height: 31px;
+}
+
+.login p.remember_me label {
+    font-size: 12px;
+    color: #777;
+    cursor: pointer;
+}
+
+.login p.remember_me input {
+    position: relative;
+    bottom: 1px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.login p.submit {
+    text-align: right;
+}
+
+.login-help {
+    margin: 20px 0;
+    font-size: 11px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px #2a85a1;
+}
+
+
+input {
+    font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+input[type=text],
+input[type=password] {
+    margin: 5px;
+    padding: 0 10px;
+    width: 200px;
+    height: 34px;
+    color: #404040;
+    background: white;
+    border: 1px solid;
+    border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+    border-radius: 2px;
+    outline: 5px solid #eff4f7;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    border-color: #7dc9e2;
+    outline-color: #dceefc;
+    outline-offset: 0;
+}
+
+input[type=submit] {
+    padding: 0 18px;
+    height: 29px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #527881;
+    text-shadow: 0 1px #e3f1f1;
+    background: #cde5ef;
+    border: 1px solid;
+    border-color: #b4ccce #b3c0c8 #9eb9c2;
+    border-radius: 16px;
+    outline: 0;
+    box-sizing: content-box;
+}
+
+input[type=submit]:active {
+    background: #cde5ef;
+    border-color: #9eb9c2 #b3c0c8 #b4ccce;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+input[type=submit]:hover {
+    background-color: #CBE898;
+    color: #404040;
+}
+
+
+textarea {
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px;
+}
+
+table {
+    border: 1px solid;
+    border-collapse: collapse;
+    border-radius: 20px;
+    margin: 50px;
+}
+
+th {
+    background-color: white;
+
+}
+
+th,
+tr {
+    height: 50px;
+}
+
+tr:hover {
+    background-color: rgba(203, 232, 152, 0.73);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    color: white;
+    background-color: #404040;
+    height: 80px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 400px;
+
+}
